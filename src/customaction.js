@@ -33,15 +33,17 @@ export const EXPORT = 'Export';
 export const ENV_VARS = [
     { varName: 'FRAMEIO_TOKEN', optional: false, display: false },
     { varName: 'FRAMEIO_SECRET', optional: false, display: false },
-    { varName: 'BUCKET_ENDPOINT', optional: false, display: true },
+    { varName: 'AWS_ENDPOINT_URL', optional: true, display: true },
+    { varName: 'AWS_ACCESS_KEY_ID', optional: true, display: true },
+    { varName: 'AWS_SECRET_ACCESS_KEY', optional: true, display: false },
+    { varName: 'AWS_DEFAULT_REGION', optional: true, display: true },
+    { varName: 'AWS_MAX_ATTEMPTS', optional: true, display: true },
+    { varName: 'AWS_PROFILE', optional: true, display: true },
     { varName: 'BUCKET_NAME', optional: false, display: true },
-    { varName: 'ACCESS_KEY', optional: false, display: true },
-    { varName: 'SECRET_KEY', optional: false, display: false },
     { varName: 'UPLOAD_PATH', optional: false, display: true },
     { varName: 'DOWNLOAD_PATH', optional: false, display: true },
     { varName: 'QUEUE_SIZE', optional: true, display: true },
-    { varName: 'PART_SIZE', optional: true, display: true },
-    { varName: 'MAX_RETRIES', optional: true, display: true }
+    { varName: 'PART_SIZE', optional: true, display: true }
 ];
 
 const b2Options = {
